@@ -1,0 +1,152 @@
+.playlists-page {
+  width: 100%;
+  height: 90vh;
+
+  background: #181818;
+  color: #fff;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 37px 11px 0 11px;
+
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+@media (min-width: 768px) {
+  .playlists-page {
+    width: 90vw;
+  }
+}
+/* Styling album header */
+.playlist-header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .playlist-header {
+    width: 80%;
+    flex-direction: row;
+    gap: 13px;
+  }
+}
+
+.playlist-image {
+  width: 115px;
+  height: 115px;
+
+  border-radius: 11px;
+}
+
+.playlist-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9px;
+  text-align: center;
+}
+.playlist-name {
+  font-family: 'Assistant';
+  font-size: 16.3px;
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+  color: aliceblue;
+  margin: 0 0 2px 0;
+}
+.playlist-artist {
+  font-family: 'Assistant';
+  font-weight: 500;
+  font-size: 9px;
+
+  color: #94a3b8;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+.playlist-type {
+  display: none;
+  color: #94a3b8;
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 11px;
+
+  margin-bottom: 2px;
+  letter-spacing: 0.4px;
+}
+@media (min-width: 768px) {
+  .playlist-image {
+    width: 145px;
+    height: 145px;
+
+    align-self: center;
+  }
+  .playlist-details {
+    align-self: flex-end;
+  }
+  .playlist-name {
+    font-size: 23px;
+  }
+  .playlist-artist {
+    font-size: 11px;
+    text-align: left;
+  }
+  .playlist-type {
+    display: flex;
+  }
+}
+
+/* Styling the track headings */
+.playlist-tracks {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-track-headings {
+  padding: 0 2px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.6px;
+}
+.playlist-heading-item {
+  list-style-type: none;
+  width: 25%;
+
+  padding: 0;
+}
+.hash {
+  width: 3%;
+}
+.playlist-track-heading {
+  font-family: 'Inter';
+  font-size: 11px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+.line {
+  width: 100%;
+  height: 1px;
+
+  border: none;
+  border-top: solid 1.3px #cbcbcb;
+  margin: 1px;
+}
+@media (max-width: 767px) {
+  .track-headings {
+    display: none;
+  }
+  .playlist-heading-item {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+}
